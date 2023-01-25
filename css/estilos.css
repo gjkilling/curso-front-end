@@ -1,0 +1,110 @@
+/** hoja de estilos generica */
+body {
+    background-color: black;
+    margin: auto;
+    border-style: solid;
+    border-color: green;
+    padding: 2px;
+  }
+/** Titulos */
+/** */
+.titulo{/** box */
+  margin: auto;
+  border-style: solid;
+  border-color: whitesmoke;
+  padding: 2px;
+  background-color: black;
+  /**align-content: center;*/
+  /** Fuente */
+  font-size:3vw;/**Texto Responsive*/
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /**font-size: 50px;*/
+  text-align: center;
+}
+ /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 18%;
+   /* height: 300px;*/
+    background:black;
+    padding: 5px;
+    }
+        
+  /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+        
+    article {
+      float: right;
+      padding: 20px;
+      width: 70%;
+      background-image: url(face.jpg);
+      /*background-repeat: no-repeat;*/
+      /*background-attachment: fixed;*/  
+      background-size: contain;
+      height: 400px; 
+      margin: auto;
+      border-style: solid;
+      border-color: black;
+      padding: 10px;
+      overflow-y: scroll;
+    }
+        
+  /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+.imgen1{
+  margin: auto;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  max-width:50%;height:auto;
+}
+.pie{
+  margin: auto;
+  border-style: solid;
+  border-color: blue;
+  padding: 10px;
+}
+.articulo{
+  margin: auto;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  background-image: url ("imagenes/face.jpg")
+}
+/*primer set fuente <p> */
+.fp1{
+  color: white;
+}
+
+/* Links */
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gainsboro;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
