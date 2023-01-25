@@ -3,7 +3,7 @@ body {
     background-color: black;
     margin: auto;
     border-style: solid;
-    border-color: green;
+    border-color: gray;
     padding: 2px;
   }
 /** Titulos */
@@ -11,16 +11,20 @@ body {
 .titulo{/** box */
   margin: auto;
   border-style: solid;
-  border-color: whitesmoke;
+  border-color: gray;
   padding: 2px;
   background-color: black;
   /**align-content: center;*/
   /** Fuente */
-  font-size:3vw;/**Texto Responsive*/
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ /** font-size:0,1vw;/**Texto Responsive*/
+ font-size:10px;
+  color: rgb(52, 215, 236);
+  font-family: 'Tangerine', serif;
+  font-weight: bold;
   /**font-size: 50px;*/
   text-align: center;
+  text-shadow: 2px 2px rgb(32, 35, 216);
+  height:95px;
 }
  /* Create two columns/boxes that floats next to each other */
   nav {
@@ -42,13 +46,14 @@ body {
       padding: 20px;
       width: 70%;
       background-image: url(face.jpg);
-      /*background-repeat: no-repeat;*/
+      background-repeat: no-repeat;
       /*background-attachment: fixed;*/  
       background-size: contain;
+      background-position: center;
       height: 400px; 
       margin: auto;
       border-style: solid;
-      border-color: black;
+      border-color: gray;
       padding: 10px;
       overflow-y: scroll;
     }
@@ -69,14 +74,14 @@ body {
 .pie{
   margin: auto;
   border-style: solid;
-  border-color: blue;
-  padding: 10px;
+  border-color: gray;
+  padding: 2px;
 }
 .articulo{
   margin: auto;
   border-style: solid;
   border-color: black;
-  padding: 10px;
+  padding: 5px;
   background-image: url ("imagenes/face.jpg")
 }
 /*primer set fuente <p> */
@@ -84,27 +89,60 @@ body {
   color: white;
 }
 
-/* Links */
-a:link {
+/* botones */
+
+button {
+  background-color: grey; 
+  border: none;
+  border-radius: 15px;
   color: white;
-  background-color: transparent;
+  padding: 2px 2px;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  display: block;
+  width: 75px;
+}
+button:hover {background-color: rgba(177, 5, 177, 0.473)}
+
+button:active {
+  background-color: rgba(177, 5, 177, 0.473)e4;
+  box-shadow: 0 5px yellow;
+  transform: translateY(6px);
+}
+/* oculta texto al cargar la pagina */
+#Datos_personales{ display:none; }
+#Estudios{ display:none; }
+#Experiencia_laboral{ display:none; }
+#Hobbyes{ display:none; }
+#Musica{ display:none; }
+
+label{
+  color: white;
 }
 
-a:visited {
-  color: gainsboro;
-  background-color: transparent;
-  text-decoration: none;
+.img2 {
+  border-radius: 8px;
+  max-width: 25%;
+  height: auto;
 }
 
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
+/* video resposive */
+.videocont {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
 }
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+.videolnk {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
