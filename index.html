@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//ES">
+<!DOCTYPE html5>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,15 +16,16 @@
       Bienvenidos! <br> CV Guillermo Killing
   </h1>    
         <section>
+            <div>
             <nav><!--menu de navegacion-->
-              <ul><!-- Primer diseño con links y scroll - no me gusto , tambien se comentaron los vinculos -->
+              <!-- <ul>Primer diseño con links y scroll - no me gusto , tambien se comentaron los vinculos -->
                 <!--<li><a href="#Datos_personales">Datos Personales</a></li>-->
                 <!--<li><a href="#Estudios">Estudios</a></li>-->
                 <!--<li><a href="#Experiencia_laboral">Experiencia laboral</a></li>-->
                 <!--<li><a href="#Hobbyes">Hobbyes</a></li>-->
                 <!--<li><a href="#Musica">Mi música favorita</a></li>-->
                 
-                <button id="Inicio" onclick="mostrarOcultar('Inicio')">Inicio</button>
+                <button id="btn_Inicio" onclick="mostrarOcultar('Inicio')">Inicio</button>
                 
                 <button id="btn_Datos_personales" onclick="mostrarOcultar('Datos_personales')">Datos<br>personales</button>
                 
@@ -43,10 +44,14 @@
                 <br>
                 <a href="mailto:someone@example.com">qwerty@qwerty.net</a>
                 </p>
-              </ul>
-           </nav> 
+              <!-- </ul> -->
+           </nav>
+            </div>
             <article><!--box dedecho de informacion-->               
                 <div id="Inicio">
+                  <p class="fp1">Hola!</p>
+                  <p class="fp1">  </p>
+                  <p class="fp1">Hola!</p>
 
                 </div>
                 <div id="Datos_personales">
@@ -58,7 +63,7 @@
                     <p class="fp1">Direccion: Lorem ipsum dolor 1234, Buenos Aires, Argentina.</p>
                     <p class="fp1">E-mail: qwerty@qwerty.net</p>
                 </div>
-                <div id="Estudios" style="display:none;">
+                <div id="Estudios">
                  <!--   <a name="Estudios"></a> -->
                     <h3 class="fp1">Estudios</h3>
                     <p class="fp1">Primario: gregeg gthjrjytj jteyjrtjkrtj</p>
@@ -107,7 +112,7 @@
                   <!--  <a name="Musica"></a> -->
                     <h3 class="fp1">Mi música favorita</h3>
                     <div class="videocont">
-                    <iframe class="videolnk" id="video-responsive" src="https://www.youtube.com/embed/videoseries?list=PL5rbRC9zFsbz-gHoy06Ttlp9j7g-MnCzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videolnk" title="playlist de youtube" id="video-responsive" src="https://www.youtube.com/embed/videoseries?list=PL5rbRC9zFsbz-gHoy06Ttlp9j7g-MnCzo" frameborder="0"  allowfullscreen></iframe>
                     </div>
                  </div>
             </article>
