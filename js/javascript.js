@@ -1,32 +1,33 @@
 
 // tomado de : https://desarrolloweb.com/articulos/1214.php//
 var banZoom = null 
+
 function creceLetra() 
 { 
-var obj = banZoom 
-var tma 
-tma = parseInt(obj.style.fontSize) 
-window.status = obj.style.fontSize 
-if (tma<obj.maxTam) 
-{ 
-obj.style.fontSize = tma + 1 
-setTimeout("creceLetra("+obj.maxTam+")",100) 
-} 
+	var obj = banZoom 
+	var tma 
+	tma = parseInt(obj.style.fontSize) 
+	window.status = obj.style.fontSize 
+		if (tma<obj.maxTam) 
+		{ 
+		obj.style.fontSize = tma + 1 
+		setTimeout("creceLetra("+obj.maxTam+")",100) 
+		} 
 //else //se comenta para que haga fade out solo una vez
 //setTimeout("resetear()",500) //
-
 } 
+
 function resetear(mn, mx, rapidez, idBan) 
 { 
-if (banZoom == null) 
-{ 
-banZoom = document.getElementById(idBan) 
-banZoom.maxTam = mx 
-banZoom.minTam = mn 
-banZoom.rapidez = rapidez 
-} 
-banZoom.style.fontSize = banZoom.minTam 
-setTimeout("creceLetra()",rapidez) 
+	if (banZoom == null) 
+	{ 
+	banZoom = document.getElementById(idBan) 
+	banZoom.maxTam = mx 
+	banZoom.minTam = mn 
+	banZoom.rapidez = rapidez 
+	} 
+	banZoom.style.fontSize = banZoom.minTam 
+	setTimeout("creceLetra()",rapidez) 
 } 
 
 
