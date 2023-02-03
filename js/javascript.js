@@ -37,7 +37,8 @@ const mostrar = (elemento) => {
 
 const mostrarOcultar = (id) => {
     let div = document.getElementById(id);
-    Datos_personales.style.display = 'none';
+    Inicio.style.display = 'none';
+	Datos_personales.style.display = 'none';
 	Estudios.style.display = 'none';
 	Experiencia_laboral.style.display = 'none';
 	Hobbyes.style.display = 'none';
